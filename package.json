@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/KatrinaNov/repair-design#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "gulp-rename": "^1.4.0"
   }
 }
