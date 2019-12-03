@@ -14,13 +14,13 @@ gulp.task('browser-sync', function () {
 });
 // минифицировать css
 gulp.task('minify-css', () => {
-  return gulp.src('src/css/*.css')
+  return gulp.src('src/css/*.css')    
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
     .pipe(rename({
       suffix: '.min',
       prefix: ''
-    }))
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
     }))
     .pipe(gulp.dest('src/css'));
 });
