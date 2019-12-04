@@ -1,32 +1,26 @@
-const gulp = require('gulp');
+const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
-const cleanCSS = require('gulp-clean-css');
-const rename = require("gulp-rename");
+// const cleanCSS = require('gulp-clean-css');
+// const rename = require("gulp-rename");
+const sass = require('gulp-sass');
 
 // Static server
-gulp.task('browser-sync', function () {
+function bs() {
+  serveSass();
   browserSync.init({
     server: {
       baseDir: "src"
     }
   });
-  gulp.watch("src/*.html").on('change', browserSync.reload);
-});
-// минифицировать css
-gulp.task('minify-css', () => {
-  return gulp.src('src/css/*.css')    
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
-    }))
-    .pipe(rename({
-      suffix: '.min',
-      prefix: ''
-    }))
-    .pipe(gulp.dest('src/css'));
-});
+  watch("src/*.html").on('change', browserSync.reload);
+  watch("src/sass/**/*.sass", serveSass);
+  watch("src/js/*.js").on('change', browserSync.reload);
+};
 
-gulp.task('watch', function() {
-  gulp.watch("src/css/*.css").on('change', browserSync.reload);
-})
+function serveSass() {
+  return src('src/sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(dest('src/css'));
+};
 
-gulp.task('default', gulp.parallel('watch', 'browser-sync', 'minify-css'));
+exports.serve = bs;
