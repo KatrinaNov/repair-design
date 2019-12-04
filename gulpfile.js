@@ -18,9 +18,10 @@ function bs() {
 };
 
 function serveSass() {
-  return src('src/sass/**/*.scss')
+  return src('src/sass/**/*.sass')
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest('src/css'));
+    .pipe(dest('src/css'))
+    .pipe(browserSync.stream());
 };
 
 exports.serve = bs;
