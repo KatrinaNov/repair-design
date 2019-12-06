@@ -15,15 +15,27 @@
   text-transform: uppercase
 .nav
   &__item
+    display: inline-block
     text-decoration: none 
     color: $light
     text-transform: uppercase
     margin-right: 40px
-    transition: color 0.2s
+    transition: 0.2s       
+    &::after
+      content: ''
+      display: block
+      height: 1px
+      background: $primary
+      width: 0%
+      transition: 0.2s 
     &:hover
       color: $primary
+      &::after
+        width: 100% 
 .phone
   color: $primary
+  &:hover
+    color: $light
 .contacts
   &__phone
-    margin-right: 45px
+    margin-right: 45px  
