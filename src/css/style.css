@@ -364,7 +364,8 @@ body {
   .button_outline {
     border: 1px solid #fff;
     background: transparent;
-    color: #fff; }
+    color: #fff;
+    transition: all 0.2s; }
     .button_outline:hover {
       border: 1px solid #E3B873;
       background: #E3B873; }
@@ -407,7 +408,8 @@ body {
       width: 100%; }
 
 .phone {
-  color: #E3B873; }
+  color: #E3B873;
+  transition: 0.2s; }
   .phone:hover {
     color: #fff; }
 
@@ -456,7 +458,8 @@ body {
     background: #131313;
     text-transform: uppercase;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 0.2s; }
     .hero__scroll-down:hover {
       color: #E3B873; }
     .hero__scroll-down::after {
@@ -480,7 +483,8 @@ body {
     text-transform: uppercase;
     color: #E3B873;
     text-decoration: none;
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    transition: 0.2s; }
     .instagram__link:hover {
       color: #fff; }
     .instagram__link::after {
