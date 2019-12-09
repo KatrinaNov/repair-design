@@ -522,7 +522,7 @@ body {
   .title_primary {
     color: #E3B873; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1240px) {
   html {
     font-size: 12px; }
   .nav__item {
