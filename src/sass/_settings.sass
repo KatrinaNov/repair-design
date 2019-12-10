@@ -5,11 +5,18 @@ html
 body
   font-family: 'Futura Book', sans-serif
   font-size: 1rem
+img
+  max-width: 100%
 .section
+  padding: 50px 0
   &-title
-    text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva One', cursive
+    text-align: center  
+    color: $dark-title  
+    &__heading
+      font-family: 'Yeseva One', cursive
+      font-size: 1.41rem
+      text-transform: uppercase
+      font-weight: 400      
     &__image
       display: flex
       justify-content: center
@@ -20,4 +27,12 @@ body
         height: 2px
         background: $primary
         margin: 0 10px
+    &__description
+      margin: auto
+      margin-top: 1.3rem
+      font-size: 1.42rem
+      line-height: 135.84%
+      max-width: 52.93rem
+.xs-visible
+  display: none
         

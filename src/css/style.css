@@ -332,20 +332,38 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-size: 1rem; }
 
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image::before, .section-title__image::after {
-      content: '';
-      width: 32px;
-      height: 2px;
-      background: #E3B873;
-      margin: 0 10px; }
+img {
+  max-width: 100%; }
+
+.section {
+  padding: 50px 0; }
+  .section-title {
+    text-align: center;
+    color: #181818; }
+    .section-title__heading {
+      font-family: 'Yeseva One', cursive;
+      font-size: 1.41rem;
+      text-transform: uppercase;
+      font-weight: 400; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__image::before, .section-title__image::after {
+        content: '';
+        width: 32px;
+        height: 2px;
+        background: #E3B873;
+        margin: 0 10px; }
+    .section-title__description {
+      margin: auto;
+      margin-top: 1.3rem;
+      font-size: 1.42rem;
+      line-height: 135.84%;
+      max-width: 52.93rem; }
+
+.xs-visible {
+  display: none; }
 
 .button {
   padding: 11px 24px;
@@ -522,19 +540,102 @@ body {
   .title_primary {
     color: #E3B873; }
 
+.types__section-title {
+  margin-bottom: 2rem; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -9.3rem;
+  padding: 1.79rem 2.14rem;
+  background: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  max-width: 23.57rem;
+  width: 96%; }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  color: #363636;
+  font-weight: 400; }
+
+.card__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595;
+  margin-bottom: 2.2rem; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background: #E3B873;
+  color: #fff;
+  padding: 1.214rem 2.6rem;
+  font-weight: 400; }
+
+.design {
+  background: #131313; }
+  .design__section-title {
+    color: #fff;
+    margin-bottom: 3.1rem; }
+  .design__card {
+    margin-bottom: 5.7rem; }
+  .design__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .design__pricetag {
+    width: 69%;
+    padding: 1rem 3.75rem; }
+
 @media screen and (max-width: 1240px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .card__text {
+    margin-left: 0; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
+  .section-title__heading {
+    font-size: 1.83rem; }
+  .section-title__description {
+    font-size: 1.25rem;
+    max-width: 25.5rem; }
   .nav__item {
     display: none; }
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 6rem; }
+  .card__text {
+    margin-left: 0;
+    margin-top: -11.3rem; }
+  .xs-hidden {
+    display: none; }
+  .xs-visible {
+    display: inline-block; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -560,3 +661,17 @@ body {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (min-width: 991px) {
+  .design {
+    background: #fff; }
+    .design__section-title {
+      color: #181818; }
+    .design__row {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between; }
+    .design__card {
+      flex-basis: 32%; }
+    .design__pricetag {
+      padding: 1.214rem 0 1.214rem 2.2rem; } }

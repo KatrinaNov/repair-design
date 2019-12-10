@@ -4,7 +4,17 @@
   .nav
     &__item
       margin-right: 1rem
-@media screen and (max-width: 992px)
+  .card
+    &__text
+      margin-left: 0
+@media screen and (max-width: 991px)
+  .section
+    &-title
+      &__heading
+        font-size: 1.83rem
+      &__description
+        font-size: 1.25rem
+        max-width: 25.5rem
   .nav
     &__item
       display: none
@@ -13,7 +23,21 @@
       display: none
     &__content
       margin-left: 0
-@media screen and (max-width: 570px) 
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 6rem
+  .card
+    &__text
+      margin-left: 0
+      margin-top: -11.3rem  
+  .xs-hidden
+    display: none
+  .xs-visible 
+    display: inline-block
+@media screen and (max-width: 570px)
   .contacts
     &__phone
       margin-right: 0
@@ -39,3 +63,17 @@
   .hero
     &__scroll-down
       display: none
+
+@media screen and ( min-width: 991px )
+  .design
+    background: $light
+    &__section-title
+      color: $dark-title
+    &__row
+      flex-direction: row
+      align-items: flex-start
+      justify-content: space-between
+    &__card
+      flex-basis: 32%
+    &__pricetag
+      padding: 1.214rem 0 1.214rem 2.2rem
