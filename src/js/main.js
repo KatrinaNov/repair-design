@@ -4,9 +4,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
   const closeBtn = document.querySelector('.modal__close');
 
+  // функция переключение модального окна
   const switchModal = () => {
     modal.classList.toggle('modal_visible');
   }
+  
   modalBtn.forEach(element => {
     element.addEventListener('click', switchModal);
   });
