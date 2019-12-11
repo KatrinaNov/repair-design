@@ -26,3 +26,38 @@
     &:hover
       border: 1px solid $primary
       background: $primary
+
+.label
+  font-size: 1.07rem
+  &_light
+    color: rgba($light, 0.5)
+.input
+  border: none
+  border-bottom: 1px solid rgba($light, 0.15)
+  font-size: 1.285rem
+  background: transparent
+  color: $light
+  padding: 0.5rem 0
+  &::placeholder
+    color: $light
+
+// чекбокс 
+.policy
+  &__checkbox
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .policy__label
+        &::before
+          background: $primary url('../img/check.svg') center/0.8rem no-repeat
+  &__label
+    display: flex
+    align-items: center
+    &::before
+      content: ''
+      width: 18px
+      height: 18px
+      border: 1px solid $primary
+      border-radius: 1px
+      cursor: pointer
+      margin-right: 0.64rem
