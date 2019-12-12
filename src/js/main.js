@@ -38,16 +38,32 @@ $(document).ready(function () {
   closeBtn.on('click', function() {
     modal.toggleClass('modal_visible');
   });
-
+// закрытие модального окна нажатием на кнопку Esc
   $(document).keydown(function(e){
     if( e.code == 'Escape' ){
       modal.removeClass('modal_visible');
     };
   });
-
+// закрытие модального окна при нажатие на любое место вне его
   $(document).on('click', function(e){
     if ( modal.is(e.target) ){
       modal.removeClass('modal_visible');
     };
   });
+
+  // появление кнопки наверх , если спустились вниз на 1400px
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1400) {
+        $('.pageup').fadeIn();
+    } else {
+        $('.pageup').fadeOut();
+    }
+  });
+  // плавная прокрутка 
+  $('#up').on('click', function(e){
+    e.preventDefault;
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+ 
+
 });
