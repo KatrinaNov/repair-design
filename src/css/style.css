@@ -330,11 +330,11 @@ template {
 .col-30 {
   flex-basis: 30%; }
 
-.col-40 {
-  width: 40%; }
+.col-45 {
+  width: 45%; }
 
-.col-60 {
-  width: 60%; }
+.col-55 {
+  width: 55%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -835,8 +835,10 @@ img {
     display: none; }
   .xs-visible {
     display: inline-block; }
-  .col-40, .col-60 {
+  .col-45, .col-55 {
     width: 100%; }
+  .swiper-container {
+    margin-bottom: 2rem; }
   .swiper-slide {
     justify-content: center; }
     .swiper-slide__heading {
