@@ -322,6 +322,20 @@ template {
   max-width: 1256px;
   margin: 0 auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 30%; }
+
+.col-40 {
+  width: 40%; }
+
+.col-60 {
+  width: 60%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -337,14 +351,39 @@ img {
 
 .section {
   padding: 50px 0; }
+  .section_dark {
+    background: #131313;
+    color: #fff; }
   .section-title {
-    text-align: center;
-    color: #181818; }
+    text-align: center; }
+    .section-title_left {
+      text-align: left; }
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
       font-size: 1.41rem;
       text-transform: uppercase;
-      font-weight: 400; }
+      font-weight: 400;
+      line-height: 138.6%;
+      margin: 0; }
+      .section-title__heading_primary {
+        color: #E3B873; }
+      .section-title__heading_big {
+        font-size: 1.78rem; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 90px;
+        height: 1px;
+        background: #E3B873;
+        margin-left: 2.4rem; }
+    .section-title__text {
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      max-width: 31.57rem;
+      margin-top: 1.8rem;
+      margin-bottom: 2rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -496,6 +535,15 @@ img {
     width: 100%;
     height: 100%;
     background: rgba(19, 19, 19, 0.7); }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3rem;
+    background: #131313; }
   .hero__content {
     position: relative;
     max-width: 47.85rem;
@@ -520,10 +568,11 @@ img {
     justify-content: center;
     align-items: center;
     position: absolute;
+    z-index: 3;
     left: 0;
     bottom: 0;
     min-width: 17.6rem;
-    min-height: 6.92rem;
+    min-height: 6rem;
     background: #131313;
     text-transform: uppercase;
     color: #fff;
@@ -575,16 +624,51 @@ img {
   .title_primary {
     color: #E3B873; }
 
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem; }
+  .swiper-slide__text {
+    flex-basis: 40%;
+    padding-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 138.6%;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem;
+    font-weight: normal; }
+
+.swiper-container-horizontal .swiper-pagination-bullets {
+  width: auto;
+  bottom: -1px; }
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3);
+  width: 0.7rem;
+  height: 0.7rem; }
+  .swiper-pagination-bullet-active {
+    background: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  background: url("../img/arrow-prev.svg") no-repeat center;
+  left: 0; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
 .types__section-title {
   margin-bottom: 2rem; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
 
 .card__text {
   position: relative;
@@ -720,11 +804,19 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 991px) {
+  .section-title_left {
+    text-align: center; }
   .section-title__heading {
     font-size: 1.83rem; }
   .section-title__description {
     font-size: 1.25rem;
     max-width: 25.5rem; }
+  .section-title__word {
+    justify-content: center; }
+    .section-title__word::after {
+      display: none; }
+  .section-title__text {
+    margin: 1rem auto; }
   .nav__item {
     display: none; }
   .hero__instagram {
@@ -742,7 +834,15 @@ img {
   .xs-hidden {
     display: none; }
   .xs-visible {
-    display: inline-block; } }
+    display: inline-block; }
+  .col-40, .col-60 {
+    width: 100%; }
+  .swiper-slide {
+    justify-content: center; }
+    .swiper-slide__heading {
+      font-size: 1.16rem; }
+    .swiper-slide_value {
+      font-size: 1.16rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -763,7 +863,9 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .swiper-slide__text {
+    flex-basis: 50%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

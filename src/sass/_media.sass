@@ -10,11 +10,19 @@
 @media screen and (max-width: 991px)
   .section
     &-title
+      &_left
+        text-align: center
       &__heading
         font-size: 1.83rem
       &__description
         font-size: 1.25rem
         max-width: 25.5rem
+      &__word  
+        justify-content: center    
+        &::after
+          display: none
+      &__text
+        margin: 1rem auto
   .nav
     &__item
       display: none
@@ -37,6 +45,15 @@
     display: none
   .xs-visible 
     display: inline-block
+  .col-40, .col-60
+    width: 100% 
+  .swiper
+    &-slide      
+      justify-content: center      
+      &__heading
+        font-size: 1.16rem
+      &_value
+        font-size: 1.16rem     
 @media screen and (max-width: 570px)
   .contacts
     &__phone
@@ -59,6 +76,10 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+  .swiper
+    &-slide 
+      &__text
+        flex-basis: 50%  
 @media screen and (max-height: 520px) 
   .hero
     &__scroll-down
