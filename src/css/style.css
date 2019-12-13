@@ -627,7 +627,10 @@ img {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  margin-left: 1px; }
+  .swiper-slide img {
+    width: 100%; }
   .swiper-slide__text {
     flex-basis: 36%;
     padding-bottom: 2rem; }
