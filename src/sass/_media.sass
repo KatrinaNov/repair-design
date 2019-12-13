@@ -47,15 +47,17 @@
     display: inline-block
   .col-45, .col-55
     width: 100% 
-  .swiper
-    &-container
-      margin-bottom: 2rem
+  .swiper  
     &-slide      
-      justify-content: center            
+      margin-bottom: 1rem 
+      &__image
+        margin-top: 0                 
       &__heading
         font-size: 1.16rem
       &_value
-        font-size: 1.16rem     
+        font-size: 1.16rem   
+  .mobile-order-top
+    order: -1  
 @media screen and (max-width: 570px)
   .contacts
     &__phone

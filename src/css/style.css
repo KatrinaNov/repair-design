@@ -629,7 +629,7 @@ img {
   flex-wrap: wrap;
   margin-bottom: 5rem; }
   .swiper-slide__text {
-    flex-basis: 40%;
+    flex-basis: 36%;
     padding-bottom: 2rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
@@ -639,6 +639,8 @@ img {
     text-transform: uppercase;
     margin-bottom: 0.64rem;
     font-weight: normal; }
+  .swiper-slide__image {
+    margin-top: -15rem; }
 
 .swiper-container-horizontal .swiper-pagination-bullets {
   width: auto;
@@ -837,14 +839,16 @@ img {
     display: inline-block; }
   .col-45, .col-55 {
     width: 100%; }
-  .swiper-container {
-    margin-bottom: 2rem; }
   .swiper-slide {
-    justify-content: center; }
+    margin-bottom: 1rem; }
+    .swiper-slide__image {
+      margin-top: 0; }
     .swiper-slide__heading {
       font-size: 1.16rem; }
     .swiper-slide_value {
-      font-size: 1.16rem; } }
+      font-size: 1.16rem; }
+  .mobile-order-top {
+    order: -1; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
