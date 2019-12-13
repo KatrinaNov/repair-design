@@ -48,7 +48,8 @@
   .col-45, .col-55
     width: 100% 
   .swiper  
-    &-slide      
+    &-slide   
+      justify-content: center   
       margin-bottom: 1rem 
       &__image
         margin-top: 0                 
@@ -56,6 +57,16 @@
         font-size: 1.16rem
       &_value
         font-size: 1.16rem   
+    &-container-horizontal 
+      & .swiper-pagination-bullets
+        left: 50% !important
+        transform: translateX(-50%) !important     
+    &-button        
+      &-prev
+        left: 30%
+      &-next
+        left: auto !important
+        right: 30%
   .mobile-order-top
     order: -1  
 @media screen and (max-width: 570px)
@@ -84,6 +95,11 @@
     &-slide 
       &__text
         flex-basis: 50%  
+    &-button        
+      &-prev
+        left: 20%
+      &-next
+        right: 20%
 @media screen and (max-height: 520px) 
   .hero
     &__scroll-down
