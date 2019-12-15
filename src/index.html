@@ -12,8 +12,10 @@
 </head>
 
 <body>
+  <!-- шапка -->
   <header class="header">
     <div class="container">
+      <!-- меню -->
       <div class="menu">
         <div class="logo menu__logo">Repair Design Project</div>
         <nav class="nav menu__logo">
@@ -33,6 +35,7 @@
     <!-- /.container -->
   </header>
   <main>
+    <!-- главный экран -->
     <section class="hero">
       <div class="instagram hero__instagram">
         <a href="#" class="instagram__link">Instagram</a>
@@ -51,7 +54,7 @@
     </section>
     <!-- ./hero -->
 
-    <section class="section section_dark projects">
+    <section class="section section_curlylines projects">
       <div class="container">
           <div class="section-title section-title_left">
               <h2 class="section-title__heading section-title__heading_primary section-title__heading_big">Завершенные <span class="section-title__word">проекты</span></h2>
@@ -60,11 +63,11 @@
         <div class="row">          
           <div class="col-45">            
                         <!-- Slider main container -->
-            <div class="swiper-container">
+            <div class="projects__swiper-container swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-wrapper_center swiper-no-swiping">
                   <!-- Slides -->
-                  <div class="swiper-slide">
+                  <div class="projects__swiper-slide swiper-slide">
                     <div class="swiper-slide__text">
                       <h3 class="swiper-slide__heading">Город:</h3>
                       <span class="swiper-slide__value">Ростов-на-Дону <br>ЖК Адмирал</span>
@@ -86,7 +89,7 @@
                     </div>
                     <!-- /.swiper-slide__text -->
                   </div>
-                  <div class="swiper-slide">
+                  <div class="projects__swiper-slide swiper-slide">
                     <div class="swiper-slide__text">
                       <h3 class="swiper-slide__heading">Город:</h3>
                       <span class="swiper-slide__value">Ростов-на-Дону <br>ЖК Адмирал</span>
@@ -94,12 +97,12 @@
                     <!-- /.swiper-slide__text -->
                     <div class="swiper-slide__text">
                       <h3 class="swiper-slide__heading">Площадь:</h3>
-                      <span class="swiper-slide__value">81 м<sup>2</sup></span>
+                      <span class="swiper-slide__value">90 м<sup>2</sup></span>
                     </div>
                     <!-- /.swiper-slide__text -->
                     <div class="swiper-slide__text">
                       <h3 class="swiper-slide__heading">Срок ремонта:</h3>
-                      <span class="swiper-slide__value">3,5 месяца</span>
+                      <span class="swiper-slide__value">4,5 месяца</span>
                     </div>
                     <!-- /.swiper-slide__text -->
                     <div class="swiper-slide__text">
@@ -108,7 +111,7 @@
                     </div>
                     <!-- /.swiper-slide__text -->
                   </div>
-                  <div class="swiper-slide">
+                  <div class="projects__swiper-slide swiper-slide">
                     <div class="swiper-slide__text">
                       <h3 class="swiper-slide__heading">Город:</h3>
                       <span class="swiper-slide__value">Ростов-на-Дону <br>ЖК Адмирал</span>
@@ -116,12 +119,12 @@
                     <!-- /.swiper-slide__text -->
                     <div class="swiper-slide__text">
                       <h3 class="swiper-slide__heading">Площадь:</h3>
-                      <span class="swiper-slide__value">81 м<sup>2</sup></span>
+                      <span class="swiper-slide__value">110 м<sup>2</sup></span>
                     </div>
                     <!-- /.swiper-slide__text -->
                     <div class="swiper-slide__text">
                       <h3 class="swiper-slide__heading">Срок ремонта:</h3>
-                      <span class="swiper-slide__value">3,5 месяца</span>
+                      <span class="swiper-slide__value">5 месяца</span>
                     </div>
                     <!-- /.swiper-slide__text -->
                     <div class="swiper-slide__text">
@@ -133,27 +136,27 @@
               </div>
               
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
+              <div class="projects__swiper-button-prev swiper-button-prev"></div>
               <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
+              <div class="projects__swiper-pagination swiper-pagination"></div>
+              <div class="projects__swiper-button-next swiper-button-next"></div>
              
             </div>
           </div>
           <!-- /.col-50 -->
-          <div class="col-55 mobile-order-top">    
-              <div class="swiper-container swiper-slide__image">
+          <div class="col-55 mobile-order-top photo">    
+              <div class="swiper-container projects__swiper-container projects__swiper-container_mt-15">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper swiper-no-swiping">
                       <!-- Slides -->
-                      <div class="swiper-slide">
+                      <div class="photo__swiper-slide swiper-slide">
                         <img src="./img/projects/project-1.jpg" alt="">
                       </div>
-                      <div class="swiper-slide">
+                      <div class="photo__swiper-slide swiper-slide">
                         <img src="./img/projects/project-2.jpg" alt="">
                       </div>
-                      <div class="swiper-slide">
-                        <img src="./img/projects/project-1.jpg" alt="">
+                      <div class="photo__swiper-slide swiper-slide">
+                        <img src="./img/projects/project-3.jpg" alt="">
                       </div>                    
                   </div>
                            
@@ -348,6 +351,106 @@
       <!-- /.container -->
     </section>
     <!-- /.design -->
+
+    <section class="section section_curlylines steps">
+      <div class="container">
+          <div class="section-title section-title_left">
+              <h3 class="section-title__subtitle">Как мы работаем</h3>
+              <h2 class="section-title__heading section-title__heading_primary section-title__heading_big">6 шагов <span class="section-title__word">до цели</span></h2>
+          </div>  
+          <ul class="steps__tabs">
+            <li class="steps__tabs-item active" data-index="1"><span class="steps__tabs-number">01</span><span class="steps__tabs-text" >Выезд на замер помещения</span></li>
+            <li class="steps__tabs-item" data-index="2"><span class="steps__tabs-number">02</span><span class="steps__tabs-text">Составление<br> сметы</span></li>
+            <li class="steps__tabs-item" data-index="3"><span class="steps__tabs-number">03</span><span class="steps__tabs-text">Разработка<br> дизайн проекта</span></li>
+            <li class="steps__tabs-item" data-index="4"><span class="steps__tabs-number">04</span><span class="steps__tabs-text">Закупка расходных материалов</span></li>
+            <li class="steps__tabs-item" data-index="5"><span class="steps__tabs-number">05</span><span class="steps__tabs-text">Ремонтно-отделочные работы</span></li>
+            <li class="steps__tabs-item" data-index="6"><span class="steps__tabs-number">06</span><span class="steps__tabs-text">Приемка-сдача работ</span></li>
+          </ul>
+          <!-- Slider main container -->
+          <div class="steps__swiper-container swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="steps__swiper-wrapper swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="steps__swiper-slide swiper-slide">
+                    <div class="steps__swiper-slide-description">
+                        <span class="steps__swiper-slide-index">1/6</span>
+                        <h3 class="swiper-slide__heading steps__swiper-slide-heading">Выезд на замеры помещения</h3>
+                        <p class="steps__swiper-slide-text">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                        <p class="steps__swiper-slide-text">Оценщик приходит, чтобы измерить комнату. Он&nbsp;проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      </div>
+                    <div class="steps__swiper-slide-img">
+                      <img src="./img/steps/step-1.jpg" alt="Выезд на замеры">
+                    </div>
+                  </div>
+                  <div class="steps__swiper-slide swiper-slide">
+                    <div class="steps__swiper-slide-description">
+                        <span class="steps__swiper-slide-index">2/6</span>
+                        <h3 class="swiper-slide__heading steps__swiper-slide-heading">Составление сметы</h3>
+                        <p class="steps__swiper-slide-text">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                        <p class="steps__swiper-slide-text">Оценщик приходит, чтобы измерить комнату. Он&nbsp;проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      </div>
+                    <div class="steps__swiper-slide-img">
+                      <img src="./img/steps/step-2.jpg" alt="Составление сметы">
+                    </div>
+                  </div>
+                  <div class="steps__swiper-slide swiper-slide">
+                    <div class="steps__swiper-slide-description">
+                        <span class="steps__swiper-slide-index">3/6</span>
+                        <h3 class="swiper-slide__heading steps__swiper-slide-heading">Разработка дизайн проекта</h3>
+                        <p class="steps__swiper-slide-text">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                        <p class="steps__swiper-slide-text">Оценщик приходит, чтобы измерить комнату. Он&nbsp;проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      </div>
+                    <div class="steps__swiper-slide-img">
+                      <img src="./img/steps/step-3.jpg" alt="Разработка дизайн проекта">
+                    </div>
+                  </div>
+                  <div class="steps__swiper-slide swiper-slide">
+                    <div class="steps__swiper-slide-description">
+                        <span class="steps__swiper-slide-index">4/6</span>
+                        <h3 class="swiper-slide__heading steps__swiper-slide-heading">Закупка расходных материалов</h3>
+                        <p class="steps__swiper-slide-text">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                        <p class="steps__swiper-slide-text">Оценщик приходит, чтобы измерить комнату. Он&nbsp;проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      </div>
+                    <div class="steps__swiper-slide-img">
+                      <img src="./img/steps/step-4.jpg" alt="Закупка расходных материалов">
+                    </div>
+                  </div>
+                  <div class="steps__swiper-slide swiper-slide">
+                    <div class="steps__swiper-slide-description">
+                        <span class="steps__swiper-slide-index">5/6</span>
+                        <h3 class="swiper-slide__heading steps__swiper-slide-heading">Ремонтно-отделочные работы</h3>
+                        <p class="steps__swiper-slide-text">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                        <p class="steps__swiper-slide-text">Оценщик приходит, чтобы измерить комнату. Он&nbsp;проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      </div>
+                    <div class="steps__swiper-slide-img">
+                      <img src="./img/steps/step-5.jpg" alt="Ремонтно-отделочные работы">
+                    </div>
+                  </div>
+                  <div class="steps__swiper-slide swiper-slide">
+                    <div class="steps__swiper-slide-description">
+                        <span class="steps__swiper-slide-index">6/6</span>
+                        <h3 class="swiper-slide__heading steps__swiper-slide-heading">Приемка-сдача работ</h3>
+                        <p class="steps__swiper-slide-text">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                        <p class="steps__swiper-slide-text">Оценщик приходит, чтобы измерить комнату. Он&nbsp;проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      </div>
+                    <div class="steps__swiper-slide-img">
+                      <img src="./img/steps/step-6.jpg" alt="Приемка-сдача работ">
+                    </div>
+                  </div>
+                  
+                  
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="steps__swiper-button-prev swiper-button-prev"></div>
+              <div class="steps__swiper-pagination swiper-pagination"></div>
+              <div class="steps__swiper-button-next swiper-button-next"></div>
+           
+          </div>
+              
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section projects -->
   </main>
 
   <div class="modal">
