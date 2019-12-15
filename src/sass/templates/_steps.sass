@@ -1,4 +1,9 @@
 .steps
+  &__heading
+    font-size: 1.929rem
+  &__word
+    &::after
+      margin-left: 6.4rem
   &__tabs
     position: relative
     list-style-type: none
@@ -14,7 +19,7 @@
       width: 9.6rem      
       opacity: 0.3
       font-size: 1.07rem
-      margin-bottom: 2.57rem
+      margin-bottom: 2.9rem
       cursor: pointer
       margin-right: 11rem      
       &:nth-child(3n)
@@ -24,13 +29,12 @@
       font-family: 'Yeseva One', cursive
       text-transform: uppercase
       border-bottom: 1px solid $primary
-      margin-bottom: 1rem
     &-text
       display: block      
-      margin-top: 1rem
+      margin-top: 0.9rem
   &__swiper 
     &-container
-      margin-top: -9rem   
+      margin-top: -8.9rem   
     &-slide
       display: flex
       justify-content: space-between
@@ -44,29 +48,34 @@
         text-transform: uppercase 
       &-heading
         max-width: 14rem
+        font-weight: normal
+        font-size: 1.07rem
+        margin-top: 1.5rem
       &-text
         font-size: 1.07rem
         line-height: 1.786rem
+        margin-top: 0.7rem
       &-img
         // width: 100%
         max-width: 54.7rem
         max-height: 27rem
-        margin-top: 9rem 
+        margin-top: 8.5rem 
         overflow: hidden
         & img
           width: 100%
     &-pagination
       width: auto !important
-      bottom: 9rem !important
+      bottom: 7.2rem !important
       & .swiper-pagination-bullet
         background: rgba($light, 0.3)
         width: 0.7rem
         height: 0.7rem
+        margin: 0 9px !important
         &-active
           background: $light
     &-button
       &-prev, &-next
-        bottom: 9rem
+        bottom: 7.2rem
         top: auto
         background-size: 42px
         width: 42px

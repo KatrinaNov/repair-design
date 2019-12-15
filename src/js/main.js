@@ -113,8 +113,8 @@ $(document).ready(function () {
   var prev2 = $('.steps__swiper-button-prev');
   var bullets2 = $('.steps__swiper-pagination');
 
-  next2.css('left', prev2.width() + bullets2.width() + 60)
-  bullets2.css('left', prev2.width() + 30)
+  next2.css('left', prev2.width() + bullets2.width() + 40)
+  bullets2.css('left', prev2.width() + 23)
 
   // переключение слайдов по табам из секции 6 
 
