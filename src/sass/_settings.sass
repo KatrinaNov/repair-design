@@ -12,9 +12,11 @@ img
   &_dark
     background: $dark
     color: $light
-  &_curlylines
-    background: $dark url('../../img/bg-lines-big.png')
+  &_curlydark
+    background: $dark url('../../img/bg-lines-dark.svg')
     color: $light
+  &_curlylight
+    background: $light url('../../img/bg-lines-light.svg')
   &-title
     text-align: center      
     // color: $dark-title 
@@ -27,7 +29,7 @@ img
       text-transform: uppercase
     &__heading
       font-family: 'Yeseva One', cursive
-      font-size: 1.41rem
+      font-size: 1.425rem
       text-transform: uppercase
       font-weight: 400
       line-height: 138.6%
@@ -55,6 +57,7 @@ img
       display: flex
       justify-content: center
       align-items: center
+      margin-top: 1rem
       &::before, &::after
         content: ''
         width: 32px
@@ -63,10 +66,12 @@ img
         margin: 0 10px
     &__description
       margin: auto
-      margin-top: 1.3rem
-      font-size: 1.42rem
+      margin-top: 1.27rem
+      font-size: 1.425rem
       line-height: 135.84%
       max-width: 52.93rem
+      &_limit
+        max-width: 25.71rem
 .xs-visible
   display: none
         
