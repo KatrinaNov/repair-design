@@ -16,7 +16,7 @@
       &-slide 
         &-img
           width: 60% 
-@media screen and (max-width: 990px)
+@media screen and (max-width: 990px)  
   .section
     &_curlydark
       background: $dark
@@ -36,6 +36,9 @@
           display: none
       &__text
         margin: 1rem auto
+  .header
+    &__container
+      width: 90%
   .nav
     &__item
       display: none
@@ -133,7 +136,10 @@
       position: absolute 
       width: 100%
       bottom: 0
-      transform: translateY(50%)      
+      transform: translateY(50%)
+      &:hover
+        background: $primary
+        color: $light      
     &__policy      
       margin-top: -3.5rem
       margin-bottom: 7rem
@@ -142,6 +148,13 @@
         justify-content: flex-start
 
 @media screen and (max-width: 570px)
+  .section
+    &-title
+      &__text
+        max-width: 25.42rem
+        line-height: 158.48%
+        font-size: 1.167rem
+        margin-top: 2rem
   .contacts
     &__phone
       margin-right: 0
@@ -154,15 +167,23 @@
   .hero
     &__scroll-down
       display: none
-    &__content
-      max-width: 22.86rem
+    // &__content
+    //   max-width: 22.86rem
+    &__title
+      font-size: 1.92rem
+      line-height: 132.83%
+      max-width: 22.86rem      
     &__text
-      font-size: 1.29rem
-      margin-bottom: 2.28rem
+      font-size: 1.5rem
+      margin-bottom: 3rem
+      max-width: 26.75rem      
     &__button
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+      margin-right: 0
+      width: 100%
+      font-size: 1.08rem
   .swiper
     &-slide 
       &__text

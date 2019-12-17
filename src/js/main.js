@@ -136,5 +136,6 @@ $(document).ready(function () {
     $('.steps__tabs-item').eq(e).addClass('active');
   }))
 
+  new WOW().init();
 
 });

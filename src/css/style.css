@@ -426,7 +426,8 @@ img {
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 0.93rem;
-  font-family: 'Futura Demi', sans-serif; }
+  font-family: 'Futura Demi', sans-serif;
+  font-weight: 500; }
   .button:hover {
     cursor: pointer; }
   .button_primary {
@@ -497,7 +498,7 @@ img {
   padding: 24px 0; }
   .header__container {
     max-width: 1256px;
-    width: 88%;
+    width: 86%;
     margin: 0 auto; }
 
 .menu {
@@ -570,7 +571,8 @@ img {
   .hero__content {
     position: relative;
     max-width: 47.85rem;
-    margin-left: 4.28rem; }
+    margin-left: 4.28rem;
+    width: 100%; }
   .hero__title {
     margin-bottom: 1rem; }
   .hero__text {
@@ -1098,6 +1100,8 @@ img {
       display: none; }
   .section-title__text {
     margin: 1rem auto; }
+  .header__container {
+    width: 90%; }
   .nav__item {
     display: none; }
   .hero__instagram {
@@ -1184,6 +1188,9 @@ img {
       width: 100%;
       bottom: 0;
       transform: translateY(50%); }
+      .control__button:hover {
+        background: #E3B873;
+        color: #fff; }
     .control__policy {
       margin-top: -3.5rem;
       margin-bottom: 7rem; }
@@ -1192,6 +1199,11 @@ img {
         justify-content: flex-start; } }
 
 @media screen and (max-width: 570px) {
+  .section-title__text {
+    max-width: 25.42rem;
+    line-height: 158.48%;
+    font-size: 1.167rem;
+    margin-top: 2rem; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -1202,15 +1214,21 @@ img {
     font-size: 1.64rem; }
   .hero__scroll-down {
     display: none; }
-  .hero__content {
+  .hero__title {
+    font-size: 1.92rem;
+    line-height: 132.83%;
     max-width: 22.86rem; }
   .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 26.75rem; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
+    margin-bottom: 1.85rem;
+    margin-right: 0;
+    width: 100%;
+    font-size: 1.08rem; }
   .swiper-slide__text {
     flex-basis: 50%; } }
 
