@@ -34,14 +34,15 @@
     color: rgba($light, 0.5)
 .input
   border: none
-  border-bottom: 1px solid rgba($light, 0.15)
+  border-bottom: 1px solid rgba($dark, 0.15)
   font-size: 1.285rem
   background: transparent
-  color: $light
   padding: 0.2rem 0 0.47rem 0
-  &::placeholder
+  &_light
+    border-bottom: 1px solid rgba($light, 0.15)
     color: $light
-
+    &::placeholder
+      color: $light
 // чекбокс 
 .policy
   &__checkbox
