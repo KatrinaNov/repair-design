@@ -72,6 +72,10 @@ $(document).ready(function () {
   var projectSwiper = new Swiper('.projects__swiper-container', {
     // Optional parameters
     loop: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
     pagination: {
       el: '.projects__swiper-pagination',
       type: 'bullets',
@@ -87,8 +91,8 @@ $(document).ready(function () {
   var prev = $('.projects__swiper-button-prev');
   var bullets = $('.projects__swiper-pagination');
 
-  next.css('left', prev.width() + bullets.width() + 60)
-  bullets.css('left', prev.width() + 30)
+  next.css('left', prev.width() + bullets.width() + 40)
+  bullets.css('left', prev.width() + 20)
 
   // слайдер в секции 6 шагов
   var stepsSwiper = new Swiper('.steps__swiper-container', {
@@ -114,7 +118,7 @@ $(document).ready(function () {
   var bullets2 = $('.steps__swiper-pagination');
 
   next2.css('left', prev2.width() + bullets2.width() + 40)
-  bullets2.css('left', prev2.width() + 23)
+  bullets2.css('left', prev2.width() + 20)
 
   // переключение слайдов по табам из секции 6 
 

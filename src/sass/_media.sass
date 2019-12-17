@@ -54,28 +54,32 @@
     display: none
   .xs-visible 
     display: inline-block
-  .col-45, .col-55
+  .col-45, .col-55 
     width: 100% 
+  .col-30
+    max-width: 100%
+  .projects
+    &__swiper
+      &-container
+        &_mt-15
+          margin-top: 0
+      &-pagination
+        left: 50% !important
+        transform: translateX(-50%) !important  
+      &-button        
+        &-prev
+          left: 20%
+        &-next
+          left: auto !important
+          right: 20%
   .swiper  
     &-slide   
       justify-content: center   
-      margin-bottom: 1rem 
-      &__image
-        margin-top: 0                 
+      margin-bottom: 1rem                      
       &__heading
         font-size: 1.16rem
       &_value
-        font-size: 1.16rem   
-    &-container-horizontal 
-      & .swiper-pagination-bullets
-        left: 50% !important
-        transform: translateX(-50%) !important     
-    &-button        
-      &-prev
-        left: 30%
-      &-next
-        left: auto !important
-        right: 30%
+        font-size: 1.16rem          
   .mobile-order-top
     order: -1  
   .steps, .clients
@@ -105,12 +109,7 @@
   .swiper
     &-slide 
       &__text
-        flex-basis: 50%  
-    &-button        
-      &-prev
-        left: 20%
-      &-next
-        right: 20%
+        flex-basis: 50%      
 @media screen and (max-height: 520px) 
   .hero
     &__scroll-down
