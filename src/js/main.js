@@ -136,6 +136,15 @@ $(document).ready(function () {
     $('.steps__tabs-item').eq(e).addClass('active');
   }))
 
+
+  // запустить анимацию, когда будет в области видимости
+    $(window).scroll(function () {  
+      if ($(this).scrollTop() >= $('.steps').offset().top - $(window).height()/2) {
+        console.log($(this).scrollTop());
+        $('.steps__animation').show();
+        }    
+    });
+
   new WOW().init();
 
 });
