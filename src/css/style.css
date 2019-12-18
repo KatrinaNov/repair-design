@@ -490,7 +490,7 @@ img {
   .policy__label_center {
     justify-content: center; }
 
-label.invalid {
+div.invalid {
   color: tomato; }
 
 input.invalid {

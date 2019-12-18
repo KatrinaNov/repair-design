@@ -151,6 +151,7 @@ $(document).ready(function () {
   function validateForm(form){
   $(form).validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -173,6 +174,7 @@ $(document).ready(function () {
         maxlength: "Имя не должно превышать 15 символов"
       },
       userPhone: "Заполните поле",
+      userQuestion: "Заполните поле",
       userEmail: {
         required: "Заполните поле",
         email: "Введите Ваш email в формате name@domain.com"
