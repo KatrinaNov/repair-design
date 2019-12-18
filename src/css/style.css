@@ -487,6 +487,8 @@ img {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label_center {
+    justify-content: center; }
 
 .header {
   position: fixed;
@@ -990,25 +992,26 @@ img {
   100% {
     opacity: 0; } }
 
-.clients__row {
-  align-items: stretch;
-  margin-top: 3.2rem; }
-
-.clients__card {
-  position: relative;
-  padding: 1.71rem 2.29rem 4rem 1.5rem;
-  max-width: 26.857rem;
-  background: #FFFFFF;
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
-  flex-basis: 32%; }
-  .clients__card-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-  .clients__card-title {
-    line-height: 1.786rem;
-    color: #181818;
-    margin-top: 0.9rem; }
+.clients {
+  padding-bottom: 27.185rem; }
+  .clients__row {
+    align-items: stretch;
+    margin-top: 3.2rem; }
+  .clients__card {
+    position: relative;
+    padding: 1.71rem 2.29rem 4rem 1.5rem;
+    max-width: 26.857rem;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    flex-basis: 32%; }
+    .clients__card-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .clients__card-title {
+      line-height: 1.786rem;
+      color: #181818;
+      margin-top: 0.9rem; }
 
 .card__avatar {
   min-width: 5.42rem;
@@ -1054,6 +1057,49 @@ img {
 
 .card__info-term {
   width: 163px; }
+
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding: 3rem 0 0 0; }
+  .footer__wrap {
+    background: #181818 url("../../img/bg-lines-dark.svg");
+    max-width: 63.07rem;
+    margin: auto;
+    padding: 2.5rem;
+    margin-top: -18.8rem;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 44.5%;
+    margin-bottom: 3.25rem; }
+    .footer__input-group_full-width {
+      flex-basis: 100%;
+      margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.5rem; }
+  .footer__button {
+    margin: auto;
+    font-size: 1.07rem;
+    padding: 1.15rem 4.2rem; }
+  .footer__menu {
+    background: #131313;
+    padding: 4.285rem 0; }
 
 .modal {
   opacity: 0;
