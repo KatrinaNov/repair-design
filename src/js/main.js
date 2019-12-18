@@ -126,7 +126,7 @@ $(document).ready(function () {
     $('.steps__tabs-item').removeClass('active');
     $(this).addClass('active');
     const e = $(this).data('index');
-    stepsSwiper.slideTo(e)
+    stepsSwiper.slideTo(e);
   })
 
   stepsSwiper.on('slideChange', (function () {
@@ -159,7 +159,10 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
       userQuestion: "required",
       // compound rule
       userEmail: {
@@ -173,7 +176,10 @@ $(document).ready(function () {
         minlength: "Слишком короткое имя",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userPhone: "Заполните поле",
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Некорректно введен номер"
+      },
       userQuestion: "Заполните поле",
       userEmail: {
         required: "Заполните поле",
