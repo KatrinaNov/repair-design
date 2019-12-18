@@ -91,6 +91,11 @@
     order: -1  
   .steps, .clients
     display: none
+  
+  .footer
+    background: $dark
+    &__wrap
+      margin-top: 0
 
 @media screen and (max-width: 700px)
   .section
@@ -187,7 +192,35 @@
   .swiper
     &-slide 
       &__text
-        flex-basis: 50%      
+        flex-basis: 50%   
+  .footer
+    &__wrap
+      background: $dark
+      padding: 0  
+    &__title
+      font-size: 1.667rem
+      margin-bottom: 4.5rem
+    &__form
+      flex-direction: column   
+    &__label
+      font-size: 1.25rem
+    &__input
+      font-size: 1.5rem 
+      &-group
+        margin-bottom: 5rem
+        &_full-width
+          margin-bottom: 0.9rem  
+    &__policy
+      margin-bottom: 5.7rem 
+    &__button
+      width: 100%
+      font-size: 1.25rem
+  .policy
+    &__label
+      font-size: 1.33rem
+      &_center
+        justify-content: flex-start
+
 @media screen and (max-height: 520px) 
   .hero
     &__scroll-down
