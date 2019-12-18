@@ -490,14 +490,16 @@ img {
   .policy__label_center {
     justify-content: center; }
 
-div.invalid {
-  color: tomato;
-  margin-top: 8px; }
-
 input {
   outline: none; }
   input.invalid {
     border-bottom: 1px solid tomato; }
+
+div.invalid {
+  position: absolute;
+  bottom: -18px;
+  color: tomato;
+  margin-top: 8px; }
 
 .header {
   position: fixed;
@@ -759,6 +761,7 @@ input {
   justify-content: space-between; }
 
 .control__input-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-basis: 32%; }
@@ -1092,6 +1095,7 @@ input {
     max-width: 37.142rem;
     margin: auto; }
   .footer__input-group {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-basis: 44.5%;
@@ -1156,6 +1160,7 @@ input {
     display: flex;
     flex-direction: column; }
   .modal__input-group {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 3.6rem; }

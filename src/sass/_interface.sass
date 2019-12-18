@@ -69,12 +69,15 @@
     &_center
       justify-content: center
 // обработка ошибок при валидаци форм
-div
-  &.invalid
-    color: tomato
-    margin-top: 8px
+
 input
   outline: none
   &.invalid
     border-bottom: 1px solid tomato
+div
+  &.invalid
+    position: absolute
+    bottom: -18px
+    color: tomato
+    margin-top: 8px
 
