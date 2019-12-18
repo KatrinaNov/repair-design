@@ -145,6 +145,46 @@ $(document).ready(function () {
         }    
     });
 
-  new WOW().init();
+  new WOW().init(); // библиотека для проигрывания анимации только когда в области видимости, работает с animate.css
+
+  // валидация форм
+  function validateForm(form){
+  $(form).validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userQuestion: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Слишком короткое имя",
+        maxlength: "Имя не должно превышать 15 символов"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите Ваш email в формате name@domain.com"
+      }
+    }
+  });
+}
+validateForm('.modal__form');
+validateForm('.control__form');
+validateForm('.footer__form');
+
+  // маска для телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 
 });
