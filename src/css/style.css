@@ -1079,7 +1079,7 @@ div.invalid {
     margin: auto;
     padding: 2.5rem;
     margin-top: -18.8rem;
-    margin-bottom: 3.714rem; }
+    margin-bottom: 3.5rem; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -1113,6 +1113,38 @@ div.invalid {
   .footer__menu {
     background: #131313;
     padding: 4.285rem 0; }
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+  .footer__contact {
+    margin-bottom: 1.857rem;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873; }
+  .footer__links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.09rem; }
+  .footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    margin: 0 8px;
+    background: #E3B873;
+    border-radius: 50%; }
+  .footer__map {
+    width: 100%;
+    max-width: 66.07rem;
+    margin: auto;
+    min-height: 33.214rem;
+    margin-bottom: 4rem; }
 
 .modal {
   opacity: 0;
