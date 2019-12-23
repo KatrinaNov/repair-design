@@ -35,6 +35,10 @@ try {
 
     $mail->send();
     header('Location: thanks.html');
+<<<<<<< HEAD
+    // echo "Форма успешно отправлена";
+=======
+>>>>>>> 9230525bb5ced6c1c9ae696ce52ade4eda52c39b
 } catch (Exception $e) {
     echo "Письмо не отправлено. Есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }

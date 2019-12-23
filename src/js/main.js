@@ -28,8 +28,10 @@
 
 $(document).ready(function () {
   var modal = $('.modal'),
+    modalAnswer = $('.modal-answer'),
     modalBtn = $('[data-toggle=modal]'),
-    closeBtn = $('.modal__close');
+    closeBtn = $('.modal__close'),
+    closeBtnAnswer = $('.modal-answer__close');
 
   modalBtn.on('click', function () {
     modal.toggleClass('modal_visible');
@@ -37,6 +39,9 @@ $(document).ready(function () {
 
   closeBtn.on('click', function () {
     modal.toggleClass('modal_visible');
+  });
+  closeBtnAnswer.on('click', function () {
+    modalAnswer.toggleClass('modal-answer_visible');
   });
   // закрытие модального окна нажатием на кнопку Esc
   $(document).keydown(function (e) {
@@ -65,6 +70,14 @@ $(document).ready(function () {
     $('html, body').animate({
       scrollTop: 0
     }, '300');
+  });
+
+  $('.hero__scroll-down').on('click', function(){
+    console.log('ты нажал кнопку вниз');
+    var el = $(this).attr('href');
+    $('html,body').animate({
+      scrollTop: $(this).offset().top - $(".hero").height()}, 2000);
+    return false;
   });
 
 
@@ -251,5 +264,30 @@ validateForm('.footer__form');
         .add(myPlacemark)
         .add(myPlacemarkWithContent);
 });
-
+// отправка формы с помощью ajax 
+// function sendingForm(form) {
+  $('#control-form').on('submit', function (event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "send.php",
+      data: $(this).serialize(),
+      success: function(){
+      //  $('#control-form')[0].reset();
+        $('form').find('input').val("");
+        modalAnswer.toggleClass('modal-answer_visible');
+        // modal.removeClass('modal_visible');
+        $('.modal-answer__title').text('Спасибо! Заявка успешно отправлена. Наш менеджер перезвонит Вам в течение 15 минут.');
+      },
+      error: function(jqXHR, textStatus) {
+        console.error(jqXHR + " " + textStatus);
+      }
+    });
+  })
+// }
+// sendingForm('#control-form');
+// sendingForm('#modal-form');
+// sendingForm('#footer-form');
+  // очистка формы
+  // $('form').find('input').val("");
 });

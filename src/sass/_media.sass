@@ -7,6 +7,10 @@
   .card
     &__text
       margin-left: 0
+  .team
+    &__card-text
+      margin-left: auto
+      margin-right: auto
   .steps
     &__tabs
       width: 60%
@@ -55,8 +59,25 @@
       margin-bottom: 6rem
   .card
     &__text
-      margin-left: 0
       margin-top: -11.3rem  
+  .team
+    &__row
+      margin-left: 35px  
+      margin-top: 6.67rem 
+    &__title-description
+      max-width: 100%   
+    &__card
+      margin-bottom: 10rem  
+      &_mb-0
+        margin-bottom: 0    
+    &__card-text     
+      max-width: 19.416rem 
+      margin-top: -6.68rem 
+    &__card-img
+      width: 304px  
+      max-width: 100% 
+    &__text
+      display: none
   .xs-hidden
     display: none
   .xs-visible 
@@ -91,6 +112,10 @@
     order: -1  
   .steps, .clients
     display: none
+  .team
+    background: $dark
+    &__section-title    
+      margin-top: 0
   
   .footer
     background: $dark
@@ -112,7 +137,8 @@
     color: $light
     &__video      
       max-width: 58.357rem
-      min-height: 31rem 
+      min-height: 207px 
+      margin-top: 3.5rem
       margin-bottom: 2.333rem  
     &__text
       color: $light
@@ -150,7 +176,9 @@
       &-label
         font-size: 1.33rem
         justify-content: flex-start
-
+  .footer
+    &__map
+      max-width: 100%
 @media screen and (max-width: 570px)
   .section
     &-title
