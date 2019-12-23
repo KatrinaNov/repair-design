@@ -34,11 +34,8 @@ try {
     $mail->Body    = "Имя пользователя: ${userName}, телефон: ${userPhone}, почта: ${userEmail}. Вопрос: ${userQuestion}";
 
     $mail->send();
-    header('Location: thanks.html');
-<<<<<<< HEAD
-    // echo "Форма успешно отправлена";
-=======
->>>>>>> 9230525bb5ced6c1c9ae696ce52ade4eda52c39b
+    // header('Location: thanks.html');
+    echo "Форма успешно отправлена";
 } catch (Exception $e) {
     echo "Письмо не отправлено. Есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
