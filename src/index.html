@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet"> 
-  <title>Repair-design</title>  
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <title>Repair-design</title>    
+  <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="./css/animate.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=f54d7344-59a8-4230-9703-d983ac7f7c46&lang=ru_RU" type="text/javascript">
-  </script>
+  <link rel="stylesheet" href="./css/style.css">  
 </head>
 
 <body>
@@ -554,7 +552,6 @@
           <p class="team__text">
             Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.
           </p>
-          </div>
         </div>
         <!-- /.container -->
       </section>
@@ -621,16 +618,16 @@
           <h3 class="footer__title">Остались вопросы?</h3>
           <form action="#" method="POST" id="footer-form" class="form footer__form">
             <div class="input-group footer__input-group">
-              <label for="user-name" class="label form__label footer__label label_light">Имя</label>
-              <input type="text" name="userName" class="input input_light form__input footer__input" id="user-name" placeholder="Как вас зовут:">
+              <label for="user-name-footer" class="label form__label footer__label label_light">Имя</label>
+              <input type="text" name="userName" class="input input_light form__input footer__input" id="user-name-footer" placeholder="Как вас зовут:">
             </div>
             <div class="input-group footer__input-group">
-              <label for="user-phone" class="label form__label footer__label label_light">Телефон</label>
-              <input type="tel" name="userPhone" class="input input_light form__input footer__input" id="user-phone" placeholder="Ваш номер телефона:">  
+              <label for="user-phone-footer" class="label form__label footer__label label_light">Телефон</label>
+              <input type="tel" name="userPhone" class="input input_light form__input footer__input" id="user-phone-footer" placeholder="Ваш номер телефона:">  
             </div> 
             <div class="input-group footer__input-group footer__input-group_full-width">       
-            <label for="user-question" class="label form__label label_light">Вопрос</label>
-            <input type="text" name="userQuestion" class="input input_light form__input footer__input" id="user-question" placeholder="Я хочу спросить:">
+            <label for="user-question-footer" class="label form__label label_light">Вопрос</label>
+            <input type="text" name="userQuestion" class="input input_light form__input footer__input" id="user-question-footer" placeholder="Я хочу спросить:">
             </div> 
             <div class="policy footer__policy">
               <input type="checkbox" name="policy-checkbox-footer" id="policy-checkbox-footer" class="policy__checkbox" checked>
@@ -646,7 +643,12 @@
           <a class="footer__link"><img src="./img/email-icon.svg" alt="email"></a>
           <a class="footer__link"><img src="./img/insta-icon.svg" alt="instagram"></a>
         </div>
-        <div class="map footer__map" id="map"></div>
+        <!-- <div class="map footer__map" id="map"></div> -->
+        <div class="ymap-container">
+          <div class="loader loader-default"></div>
+          <div class="footer__map" id="map"></div>
+      </div>
+      <!-- .ymap-container -->
           <!-- /.map -->
       </div>
       
@@ -681,16 +683,16 @@
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
       <form action="send.php" method="POST" id="modal-form" class="form modal__form">
         <div class="input-group modal__input-group">
-          <label for="user-name" class="label form__label label_light">Имя</label>
-          <input type="text" name="userName" class="input input_light form__input modal__input" id="user-name" placeholder="Как вас зовут:">
+          <label for="user-name-modal" class="label form__label label_light">Имя</label>
+          <input type="text" name="userName" class="input input_light form__input modal__input" id="user-name-modal" placeholder="Как вас зовут:">
         </div>
         <div class="input-group modal__input-group">
-          <label for="user-phone" class="label form__label label_light">Телефон</label>
-          <input type="tel" name="userPhone" class="input input_light form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
+          <label for="user-phone-modal" class="label form__label label_light">Телефон</label>
+          <input type="tel" name="userPhone" class="input input_light form__input modal__input"  id="user-phone-modal" placeholder="Ваш номер телефона:">
         </div>
         <div class="input-group modal__input-group">
-          <label for="user-email" class="label form__label label_light">Email</label>
-          <input type="email" name="userEmail" class="input input_light form__input modal__input" id="user-mail" placeholder="Ваш email">
+          <label for="user-email-modal" class="label form__label label_light">Email</label>
+          <input type="email" name="userEmail" class="input input_light form__input modal__input" id="user-email-modal" placeholder="Ваш email">
         </div>          
         <div class="policy modal__policy">
           <input type="checkbox" name="policy-checkbox-modal" id="policy-checkbox-modal" class="policy__checkbox" checked>
@@ -715,8 +717,9 @@
   <a id="up" class="pageup"><img src="./img/up-arrow.svg" alt="up" ></a>
 
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script async src="https://api-maps.yandex.ru/2.1/?apikey=f54d7344-59a8-4230-9703-d983ac7f7c46&load=package.standard&lang=ru_RU"></script> -->
+  <script src="./js/swiper.min.js"></script>
   <script src="./js/wow.min.js"></script>
   <script src="./js/jquery.validate.min.js"></script>
   <script src="./js/jquery.mask.min.js"></script>
